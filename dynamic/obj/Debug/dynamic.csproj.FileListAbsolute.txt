@@ -1,6 +1,0 @@
-c:\users\htosun\documents\visual studio 2015\Projects\dynamic\dynamic\bin\Debug\dynamic.exe.config
-c:\users\htosun\documents\visual studio 2015\Projects\dynamic\dynamic\bin\Debug\dynamic.exe
-c:\users\htosun\documents\visual studio 2015\Projects\dynamic\dynamic\bin\Debug\dynamic.pdb
-c:\users\htosun\documents\visual studio 2015\Projects\dynamic\dynamic\obj\Debug\dynamic.csprojResolveAssemblyReference.cache
-c:\users\htosun\documents\visual studio 2015\Projects\dynamic\dynamic\obj\Debug\dynamic.exe
-c:\users\htosun\documents\visual studio 2015\Projects\dynamic\dynamic\obj\Debug\dynamic.pdb

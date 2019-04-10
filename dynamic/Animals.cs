@@ -6,19 +6,41 @@ using System.Threading.Tasks;
 
 namespace dynamic
 {
-    public class Animal{}
-    public class Dog:Animal
+    public abstract class Animal
     {
-        public void Speak()
+
+        public abstract void Speak();
+    }
+    public class Legs
+    {
+        public bool isHave { get; set; }
+        public int? count { get; set; }
+
+        public virtual void test()
+        {
+            Console.WriteLine("In Legs");
+        }
+    }
+    public class Dog : Animal
+    {
+        public override void Speak()
         {
             Console.WriteLine("Hav Hav");
         }
+        public void test()
+        {
+            Console.WriteLine("In Dog");
+        }
     }
-    public class Cat:Animal
+    public class Cat : Animal
     {
-        public static void Speak()
+        public override void Speak()
         {
             Console.WriteLine("Miyav Miyav");
+        }
+        public void test()
+        {
+            Console.WriteLine("In Cat");
         }
     }
 }

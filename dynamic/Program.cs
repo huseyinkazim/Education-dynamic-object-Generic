@@ -17,7 +17,7 @@ namespace dynamic
     }
     public class B :A{ }
     public class A { }
-    public struct Insan//class ile farkı ney?
+    public struct Insan
     {
         public string Ad { get; set; }
         public string Soyad { get; set; }
@@ -75,13 +75,21 @@ namespace dynamic
             #endregion 
             #region test
             Type dogType = Assembly.Load("dynamic").GetType("dynamic.Dog");
-          /*All of Class
-           *  foreach(var item in Assembly.Load("dynamic").GetTypes())
-            {
-                
-            }*/
+            Type catType = Assembly.Load("dynamic").GetType("dynamic.Cat");
+            Type legsType = Assembly.Load("dynamic").GetType("dynamic.Legs");
+            /*All of Class
+             *  foreach(var item in Assembly.Load("dynamic").GetTypes())
+              {
+
+              }*/
             dynamic dog = Activator.CreateInstance(dogType);
             dog.Speak();
+            dogType.GetMethod("test").Invoke(dog, null);
+            dynamic cat = Activator.CreateInstance(catType);
+            cat.Speak();
+            catType.GetMethod("test").Invoke(cat, null);
+            dynamic leg = Activator.CreateInstance(legsType);
+            legsType.GetMethod("test").Invoke(leg, null);
             #endregion
 
             MyClass<Dog, Animal> test = new MyClass<Dog, Animal>();
